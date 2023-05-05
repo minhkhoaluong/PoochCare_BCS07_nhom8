@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- lightBox  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"/>
+      <!-- line-awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"/>
+    <!-- fontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400;500;700&family=Jost:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;700&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/service.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+</head>
+
+<body id="myBody">
+    <header>
+        <div class="header__content container">
+            <nav class="navbar navbar-expand-lg p-0  py-lg-2">
+                <a class="navbar-brand" href="#">
+                    Pooch Care
+                </a>
+                <!-- thêm class " collapsed " vào để bật tắt icon bars, icon close -->
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCare"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class=" navbar-toggler-icon  fa-solid fa-bars"></i>
+                    <i class=" navbar-toggler-icon  fa-solid fa-xmark"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCare">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="line nav-link" href="./index.html"><span>Home</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="line nav-link" href="./about.html"><span>About</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="line nav-link" href="./service.html"><span>Service</span></a>
+                        </li>
+                        <li class="nav-item  active">
+                            <a class="line nav-link" href="#"><span>Gallery</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="line nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>Blog</span><i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./blog-post.html"><span>Blog Posts</span></a>
+                                <a class="dropdown-item" href="./blog-single.html"><span>Blog single</span></a>
+                                <a class="dropdown-item" href="./landing-page.html"><span>Landing Page</span></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="line nav-link" href="./contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="switchButton-mobile">
+                    <div id="switchButton">
+                        <i class="fa-regular fa-sun"></i>
+                        <i class="fa-regular fa-moon"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="breadcrumb-About">
+        <div class="breadcrumb-About__content ">
+            <h2>Gallery</h2>
+            <ol class="breadcrumb ">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span>Gallery</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section class="gallery section">
+        <div class="container">
+            <div class="gallery__content">
+                <div class="title mb-5 text-center">
+                    <p>VIEW GALLERY</p>
+                    <h3>Latest Gallery</h3>
+                </div>
+                <div class="gallery__items row">
+                    <div class="col-12 mb-4 mb-md-0 col-md-4">
+                        <div class="gallery__item">
+                            <!-- data-lightbox của thư viện lightbox ghi nội dung giống 
+                            nhau sẽ làm thành 1 bộ gallery data-title là nội dung-->
+                            <a href="./img/g1.jpg" data-lightbox="dog" data-title="content of some thing"> <img class="img-fluid" src="./img/g1.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4 mb-md-0 col-md-4">
+                        <div class="gallery__item">
+                            <a href="./img/g2.jpg" data-lightbox="dog" data-title="content of some thing"> <img class="img-fluid" src="./img/g2.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4 mb-md-0 col-md-4">
+                        <div class="gallery__item">
+                            <a href="./img/g3.jpg" data-lightbox="dog" data-title="content of some thing"><img class="img-fluid" src="./img/g3.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4 mb-md-0 col-md-4 my-md-4">
+                        <div class="gallery__item">
+                            <a href="./img/g4.jpg" data-lightbox="dog" data-title="content of some thing"> <img class="img-fluid" src="./img/g4.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4 mb-md-0 col-md-4 my-md-4">
+                        <div class="gallery__item">
+                            <a href="./img/g5.jpg" data-lightbox="dog" data-title="content of some thing"><img class="img-fluid" src="./img/g5.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4 mb-md-0 col-md-4 my-md-4">
+                        <div class="gallery__item">
+                            <a href="./img/g6.jpg" data-lightbox="dog" data-title="content of some thing"> <img class="img-fluid" src="./img/g6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4 mb-md-0 col-md-4">
+                        <div class="gallery__item">
+                            <a href="./img/g7.jpg" data-lightbox="dog" data-title="content of some thing"><img class="img-fluid" src="./img/g7.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4 mb-md-0 col-md-4">
+                        <div class="gallery__item">
+                            <a href="./img/g8.jpg" data-lightbox="dog" data-title="content of some thing"><img class="img-fluid" src="./img/g8.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4 mb-md-0 col-md-4">
+                        <div class="gallery__item">
+                            <a href="./img/g9.jpg" data-lightbox="dog" data-title="content of some thing"><img class="img-fluid" src="./img/g9.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__content section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-4 col-md-6  col-lg-6 mb-lg-0">
+                        <div class="footer__item">
+                            <h3>Contact information</h3>
+                            <p><span>Address : </span>#135 block, Barnard St. Brooklyn, London 10036, UK</p>
+                            <p><span>Phone : </span><a href="#">+(12)234-11-24</a></p>
+                            <p><span>Email : </span><a href="#">example@mail.com</a></p>
+                            <i><a href="#"><i class="fa-brands fa-facebook-f"></i></a></i>
+                            <i><a href="#"><i class="fa-brands fa-twitter"></i></a></i>
+                            <i><a href="#"><i class="fa-brands fa-dribbble"></i></a></i>
+                            <i><a href="#"><i class="fa-brands fa-google"></i></a></i>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4 col-sm-6 col-md-6 col-lg-2 mb-lg-0">
+                        <div class="footer__item">
+                            <h3>Company</h3>
+                            <p><a href="#">About Us</a></p>
+                            <p><a href="#">Blog Posts</a></p>
+                            <p><a href="#">Services</a></p>
+                            <p><a href="#">Pricing</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4  col-sm-6 col-md-6 col-lg-2 mb-lg-0">
+                        <div class="footer__item">
+                            <h3>Quick Links</h3>
+                            <p><a href="#">Contact Us</a></p>
+                            <p><a href="#">Create account</a></p>
+                            <p><a href="#">Care Center</a></p>
+                            <p><a href="#">Site Feedback</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4   col-sm-6 col-md-6 col-lg-2 mb-lg-0">
+                        <div class="footer__item">
+                            <h3>Support</h3>
+                            <p><a href="#">All Dogs</a></p>
+                            <p><a href="#">Care Advices</a></p>
+                            <p><a href="#">Care Support</a></p>
+                            <p><a href="#">Veterinary Help</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="copyright text-center ">
+        <p>© 2020 Pooch Care. All Rights Reserved. Design by <span>Name</span></p>
+    </div>
+
+    <!-- backToTop -->
+    <a class="backToTop cd-top text-replace js-cd-top" href="#"><i class="las la-level-up-alt"></i></a>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- dark and light theme  -->
+    <script>
+        /**
+       Solution: 
+       Khi click vào nút moon 🌙 , thẻ body sẽ được thêm class dark.
+       Dựa vào class dark, ta viết css dành riêng cho dark theme.
+       Ngược lại, khi click vào nút sun ☀️, ta sẽ xóa class dark để css light theme hiện lại
+       */
+        //gọi thẻ button có id là switchButton
+        // gắn chức năng click cho switchButton
+        document.getElementById("switchButton").onclick = function () {
+            //khi button được click thì tìm đến thẻ body có id là myBody
+            // dùng classlist để gọi thuộc tính class của thẻ body
+            //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
+            document.getElementById("myBody").classList.toggle("dark");
+        };
+    </script>
+    <!-- backToTop -->
+    <script src="/js/backToTop.js"></script>
+    <script src="./js/util.js"></script>
+    <!-- lightBox  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- lightBox_function_init -->
+    <script>
+        lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+        })
+    </script>
+</body>
+
+</html>

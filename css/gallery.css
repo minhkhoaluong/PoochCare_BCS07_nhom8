@@ -1,0 +1,35 @@
+ 
+
+.dark .gallery {
+    background-color: var(--bg-color);
+}
+
+.gallery__items img {
+    border-radius: 10px;
+}
+.gallery__item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.gallery__item::after{
+    content: '';
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+      
+    background-image: linear-gradient(90deg, #008fdc00 0%, #ffffffc2 100%);
+    ;
+    transform: skewX(-25deg);
+    
+}
+.gallery__item:hover::after{
+    animation: shine .75s;
+}
+ @keyframes shine{
+    100%{
+        left: 110%;
+    }
+ }

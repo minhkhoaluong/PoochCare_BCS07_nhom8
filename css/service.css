@@ -1,0 +1,46 @@
+:root {
+    --footer-color: #111111;
+    --bg-color: #151515;
+    --primary-color: #189A46;
+    --heading-color: #ddd;
+    --font-color: #afafaf;
+    --border-color: #212529;
+    --secondary-color: #f53626;
+    --bg-light: rgba(147, 107, 232, 0.05);
+    --bg-dark-about: #222;
+    --button-hover: #116E32;
+}
+
+
+
+
+.dark .services{
+    background-color: var(--bg-color);
+}
+.dark .services__content .row{
+    border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+
+
+
+.service__item img{
+    border-radius: 10px;
+}
+.service__item .title h4{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.services__content .row{
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+.services__content .row:nth-child(4){
+    border:none
+}
+
+
+
+
+
+ 
